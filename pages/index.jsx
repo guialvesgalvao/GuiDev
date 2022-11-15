@@ -1,15 +1,17 @@
 import Image from "next/image";
-import site from '../public/criacoes.jpg';
+import Logo from '../public/logo-branco.png';
+import iReact from '../public/react.svg';
+import iHtml from '../public/html5.svg';
+import iBootstrap from '../public/bootstrap.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLinkedin,faGithub,faLinkedinIn,faGithubAlt,faSquareGithub} from '@fortawesome/free-brands-svg-icons';
+import {faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
 // botao com backgc azul e borda branca, when hover, fill with white
-
 
 export default function Home() {
 
   return (
-    <div className="">
+    <div>
       <section >
       <div className="alignTextCentral">
             <span className="textSize1">Hi,this is my Portifolio</span>
@@ -23,14 +25,40 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h4 className="container">Skills</h4>
         <div className="skillOrg">
-          <p>description about me and about the language, maybe about de react and next developer aplication especiality</p>
-          <div className="cardSkill">
-            <span>React</span>
-            <span>imageeee</span>
-            <span>skill bar</span>
-            </div>
+          <div className="skillText">
+            <span className="titleSkill">Skill</span>
+            <p>description about me and about the language, maybe about de react and next developer aplication especiality</p>
+          </div>
+          <div className="containerS">
+                    <div className="imgcontainerS">
+                        <div>
+                          <span>React</span>
+                          <Image src={iReact} alt="React" className='imgS'/>
+                          <span>bar</span>
+                        </div>
+                        <div>
+                          <span>Html</span>
+                          <Image src={iHtml} alt="Html" className='imgS'/>
+                          <span>bar</span>
+                        </div>
+                        <div>
+                          <span>Bootstrap</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS'/>
+                          <span>bar</span>
+                        </div>
+                        <div>
+                          <span>React</span>
+                          <Image src={Logo} alt="asddsa" className='imgS' />
+                          <span>bar</span>
+                        </div>
+                        <div>
+                          <span>React</span>
+                          <Image src={Logo} alt="asddsa" className='imgS' />
+                          <span>bar</span>
+                        </div>
+                    </div>
+                </div>
         </div>
       </section>
       <section>

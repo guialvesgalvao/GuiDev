@@ -79,6 +79,20 @@
     margin: 0px 10px;
 }
 
+.skillText{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+}
+
+.titleSkill{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fefaf6;
+    text-decoration: underline #222222 3px;
+}
+
 .cardSkill{
     display: flex;
     align-items: center;
@@ -97,7 +111,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 86vh;
 }
 
 .pText {

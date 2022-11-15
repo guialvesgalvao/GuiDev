@@ -1,5 +1,6 @@
 import '../styles/globals.css';
-import '../styles/default.css'
+import '../styles/default.css';
+import '../styles/testes.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AppProvider } from '../contexts/AppContext';
