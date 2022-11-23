@@ -48,13 +48,10 @@
 .cardStyle {
     background-color: #fefaf6;
     margin: 5% 9%;
-    padding: 1.4rem;
+    padding: 1.4rem 1.4rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.cardStyle:hover {
-    border:0.12rem solid #222222;
+    border:0.124rem solid #222222;
 }
 
 
@@ -65,6 +62,12 @@
     color: #fefaf6;
     border: none;
     padding: 0.3rem 0.8rem;
+}
+
+.btnCard:hover{
+    background-color: #fefaf6;
+    color: #222222;
+    border: 1px solid #222222;
 }
 
 .marginCard{
@@ -81,6 +84,7 @@
 
 .skillText{
     display: flex;
+    width: 50%;
     justify-content: left;
     text-align: left;
     flex-direction: column;
@@ -104,6 +108,26 @@
     border-radius: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
 }
+
+.w100{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.marginToFix{
+    margin-left: 4rem;
+}
+
+
+
+
 
 
 .alignTextCentral{
@@ -136,6 +160,12 @@
     font-size: 1.2em;
     color: #fefaf6;
 }
+
+.imgProjects {
+    width: 300 !important;
+    height: 300 !important;
+}
+
 
 
 .typing-animation {

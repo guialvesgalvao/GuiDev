@@ -1,12 +1,18 @@
 import Image from "next/image";
-import Logo from '../public/logo-branco.png';
+import Link from "next/link";
+
+import { Progress } from "reactstrap";
+
 import iReact from '../public/react.svg';
 import iHtml from '../public/html5.svg';
 import iBootstrap from '../public/bootstrap.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
-// botao com backgc azul e borda branca, when hover, fill with white
+import Logo from '../public/logo-branco.png';
+import Aba from '../public/aba.png';
+import Simpsons from '../public/simpsons.png';
+
 
 export default function Home() {
 
@@ -32,56 +38,117 @@ export default function Home() {
           </div>
           <div className="containerS">
                     <div className="imgcontainerS">
-                        <div>
+                        <div className="w100">
                           <span>React</span>
-                          <Image src={iReact} alt="React" className='imgS'/>
-                          <span>bar</span>
+                          <Image src={iReact} alt="React" className='imgS marginToFix' />
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            basic
+                          </Progress>
                         </div>
-                        <div>
+                        <div className="w100">
                           <span>Html</span>
-                          <Image src={iHtml} alt="Html" className='imgS'/>
-                          <span>bar</span>
+                          <Image src={iHtml} alt="Html" className='imgS marginToFix'/>
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            basic
+                          </Progress>
                         </div>
-                        <div>
+                        <div className="w100">
                           <span>Bootstrap</span>
-                          <Image src={iBootstrap} alt="Bootstrap" className='imgS'/>
-                          <span>bar</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix'/>
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            basic
+                          </Progress>
                         </div>
-                        <div>
+                        <div className="w100">
                           <span>React</span>
-                          <Image src={Logo} alt="asddsa" className='imgS' />
-                          <span>bar</span>
+                          <Image src={Logo} alt="asddsa" className='imgS marginToFix' />
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            basic
+                          </Progress>
                         </div>
-                        <div>
+                        <div className="w100">
                           <span>React</span>
-                          <Image src={Logo} alt="asddsa" className='imgS' />
-                          <span>bar</span>
+                          <Image src={Logo} alt="asddsa" className='imgS marginToFix' />
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            basic
+                          </Progress>
                         </div>
                     </div>
                 </div>
         </div>
       </section>
       <section>
-        <h3 className="container">Projects</h3>
+        <h3 className="container mt-3">Projects</h3>
         <div className="cardStyle">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ipsa </p>
-          <button className="btnCard">View</button>
-          <button className="btnCard marginCard">GitHub</button>
+        <Image 
+        src={Aba}
+        alt="Aba"
+        width={200}
+        height={150}
+        className="imgProjects"
+        />
+          <p>Development front-end of the platform ColabEduc, that contains authentication and pagination for education games</p>
+          <div>
+            <button className="btnCard">View</button>
+            <button className="btnCard marginCard">GitHub</button>
+          </div>
         </div>
         <div className="cardStyle">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ipsa </p>
-          <button className="btnCard">View</button>
-          <button className="btnCard marginCard">GitHub</button>
+        <Image 
+        src={Aba}
+        alt="Aba"
+        width={200}
+        height={150}
+        className="imgProjects"
+        />
+          <p>Reformulation of Aba Embalagens instutional site </p>
+          <div>
+            <button className="btnCard">View</button>
+            <button className="btnCard marginCard">GitHub</button>
+          </div>
         </div>
         <div className="cardStyle">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ipsa </p>
-          <button className="btnCard">View</button>
-          <button className="btnCard marginCard">GitHub</button>
+        <Image 
+        src={Simpsons}
+        alt="Aba"
+        width={200}
+        height={150}
+        className="imgProjects"
+        />
+          <p>Education game for the platform ColabEduc, developed with NextJS</p>
+          <div>
+            <button className="btnCard">View</button>
+            <button className="btnCard marginCard">GitHub</button>
+          </div>
         </div>
         <div className="cardStyle">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ipsa </p>
-          <button className="btnCard">View</button>
-          <button className="btnCard marginCard">GitHub</button>
+        <Image 
+        src={Aba}
+        alt="Aba"
+        width={200}
+        height={150}
+        className="imgProjects"
+        />
+          <p>Development platform to listen podcasts, very similar to Spotify, made in Next Level Week</p>
+          <div>
+            <button className="btnCard">View</button>
+            <button className="btnCard marginCard">GitHub</button>
+          </div>
         </div>
       </section>
     </div>
