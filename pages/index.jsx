@@ -6,6 +6,10 @@ import { Progress } from "reactstrap";
 import iReact from '../public/react.svg';
 import iHtml from '../public/html5.svg';
 import iBootstrap from '../public/bootstrap.svg';
+import iPhp from '../public/php.svg';
+import iJs from '../public/js.svg';
+import iTs from '../public/typescript.png';
+import iMysql from '../public/mysql.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
@@ -39,7 +43,7 @@ export default function Home() {
           <div className="containerS">
                     <div className="imgcontainerS">
                         <div className="w100">
-                          <span>React/NextJS</span>
+                          <span className="titleLang">React/NextJS</span>
                           <Image src={iReact} alt="React" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
@@ -50,7 +54,7 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>HTML</span>
+                          <span className="titleLang">HTML</span>
                           <Image src={iHtml} alt="Html" className='imgS marginToFix'/>
                           <Progress
                             className="my-2 w80"
@@ -61,7 +65,7 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>CSS/Bootstrap</span>
+                          <span className="titleLang">CSS/Bootstrap</span>
                           <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix'/>
                           <Progress
                             className="my-2 w80"
@@ -72,8 +76,8 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>JavaScript</span>
-                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <span className="titleLang">JavaScript</span>
+                          <Image src={iJs} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
@@ -83,8 +87,8 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>TypeScript</span>
-                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <span className="titleLang">TypeScript</span>
+                          <Image src={iTs} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
@@ -93,8 +97,8 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>MySQL</span>
-                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <span className="titleLang">MySQL</span>
+                          <Image src={iMysql} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
@@ -103,8 +107,8 @@ export default function Home() {
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>PHP</span>
-                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <span className="titleLang">PHP</span>
+                          <Image src={iPhp} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
