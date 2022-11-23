@@ -1,5 +1,59 @@
+/* --- Geral --- */
+
 .backgroundDefault{
     background-color: #3b62cf;
+}
+
+/* --- Header --- */
+
+.buttonHeader{
+    font-size: 1.050rem;
+    font-weight: 500;
+    padding: 11px 20px;
+    background-color: transparent;
+    border: 2px solid #222222;
+    color: #222222;
+}
+
+.buttonHeader:hover {
+    animation: btnbackground 400ms 500ms both;
+}
+
+/* --- Div Principal --- */
+
+.alignTextCentral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 86vh;
+}
+
+.pText {
+    font-size: 2.3rem;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fefaf6;
+}
+
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 3.5s steps(40) 1s infinite both;
+}
+
+.textSize1 {
+    font-size: 3em;
+    color: #fefaf6;
+}
+.textSize2 {
+    font-size: 2em;
+    color: #fefaf6;
+}
+.textSize3 {
+    font-size: 1.2em;
+    color: #fefaf6;
 }
 
 .iconLinkedin{
@@ -26,53 +80,7 @@
     margin-left: 3px;
 }
 
-.buttonHeader{
-    font-size: 1.050rem;
-    font-weight: 500;
-    padding: 11px 20px;
-    background-color: transparent;
-    border: 2px solid #222222;
-    color: #222222;
-}
-
-.buttonHeader:hover {
-    animation: btnbackground 400ms 500ms both;
-}
-
-.togglerStyle{
-    border: 2px #fff solid !important;
-    color: #fff !important;
-    background-color: #fff !important;
-}
-
-.cardStyle {
-    background-color: #fefaf6;
-    margin: 5% 9%;
-    padding: 1.4rem 1.4rem;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border:0.124rem solid #222222;
-}
-
-
-
-.btnCard{
-    border-radius: 0.55rem;
-    background-color: #222222;
-    color: #fefaf6;
-    border: none;
-    padding: 0.3rem 0.8rem;
-}
-
-.btnCard:hover{
-    background-color: #fefaf6;
-    color: #222222;
-    border: 1px solid #222222;
-}
-
-.marginCard{
-    margin-left: 0.875rem;
-}
+/* --- Skills --- */
 
 .skillOrg {
     display: flex;
@@ -97,16 +105,26 @@
     text-decoration: underline #222222 3px;
 }
 
-.cardSkill{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+.containerS{
+    width: 50%;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
     background-color: #fefaf6;
-    padding: 1.4rem;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #fefaf6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgcontainerS{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgS{
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
 }
 
 .w100{
@@ -125,53 +143,48 @@
     margin-left: 4rem;
 }
 
+/* --- Projects --- */
 
-
-
-
-
-.alignTextCentral{
+.responsiveProjects {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 86vh;
 }
 
-.pText {
-    font-size: 2.3rem;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    color: #fefaf6;
-
+.cardStyle {
+    background-color: #fefaf6;
+    margin: 5% 9%;
+    padding: 1.4rem 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border:0.124rem solid #222222;
 }
 
-.textSize1 {
-    font-size: 3em;
-    color: #fefaf6;
-}
-.textSize2 {
-    font-size: 2em;
-    color: #fefaf6;
-}
-.textSize3 {
-    font-size: 1.2em;
-    color: #fefaf6;
-}
 
 .imgProjects {
     width: 300 !important;
     height: 300 !important;
 }
 
-
-
-.typing-animation {
-    animation: blinkCursor 500ms steps(40) infinite normal, typing 3.5s steps(40) 1s infinite both;
+.btnCard{
+    border-radius: 0.55rem;
+    background-color: #222222;
+    color: #fefaf6;
+    border: none;
+    padding: 0.3rem 0.8rem;
 }
 
+.btnCard:hover{
+    background-color: #fefaf6;
+    color: #222222;
+    border: 1px solid #222222;
+}
+
+.marginCard{
+    margin-left: 0.875rem;
+}
+
+
+/* --- Animações --- */
 
 @keyframes btnbackground {
     from{
@@ -183,7 +196,6 @@
     }
     
 }
-
 
 @keyframes typing {
     from{

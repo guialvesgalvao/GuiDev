@@ -34,58 +34,82 @@ export default function Home() {
         <div className="skillOrg">
           <div className="skillText">
             <span className="titleSkill">Skill</span>
-            <p>description about me and about the language, maybe about de react and next developer aplication especiality</p>
+            <p>description about me and about the language, maybe about de react and next developer aplication especiality responsive sites</p>
           </div>
           <div className="containerS">
                     <div className="imgcontainerS">
                         <div className="w100">
-                          <span>React</span>
+                          <span>React/NextJS</span>
                           <Image src={iReact} alt="React" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
+                            color="danger"
                           >
-                            basic
+                            Advanced
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>Html</span>
+                          <span>HTML</span>
                           <Image src={iHtml} alt="Html" className='imgS marginToFix'/>
                           <Progress
                             className="my-2 w80"
                             value={100}
+                            color="danger"
                           >
-                            basic
+                            Advanced
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>Bootstrap</span>
+                          <span>CSS/Bootstrap</span>
                           <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix'/>
                           <Progress
                             className="my-2 w80"
                             value={100}
+                            color="danger"
                           >
-                            basic
+                            Advanced
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>React</span>
-                          <Image src={Logo} alt="asddsa" className='imgS marginToFix' />
+                          <span>JavaScript</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                            color="danger"
+                          >
+                            Advanced
+                          </Progress>
+                        </div>
+                        <div className="w100">
+                          <span>TypeScript</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
                           >
-                            basic
+                            Basic
                           </Progress>
                         </div>
                         <div className="w100">
-                          <span>React</span>
-                          <Image src={Logo} alt="asddsa" className='imgS marginToFix' />
+                          <span>MySQL</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
                           >
-                            basic
+                            Basic
+                          </Progress>
+                        </div>
+                        <div className="w100">
+                          <span>PHP</span>
+                          <Image src={iBootstrap} alt="Bootstrap" className='imgS marginToFix' />
+                          <Progress
+                            className="my-2 w80"
+                            value={100}
+                          >
+                            Basic
                           </Progress>
                         </div>
                     </div>
@@ -94,60 +118,62 @@ export default function Home() {
       </section>
       <section>
         <h3 className="container mt-3">Projects</h3>
-        <div className="cardStyle">
-        <Image 
-        src={Aba}
-        alt="Aba"
-        width={200}
-        height={150}
-        className="imgProjects"
-        />
-          <p>Development front-end of the platform ColabEduc, that contains authentication and pagination for education games</p>
-          <div>
-            <button className="btnCard">View</button>
-            <button className="btnCard marginCard">GitHub</button>
+        <div className="responsiveProjects">
+          <div className="cardStyle">
+          <Image
+          src={Aba}
+          alt="Aba"
+          width={200}
+          height={150}
+          className="imgProjects"
+          />
+            <p>Development front-end of the platform ColabEduc, that contains authentication and pagination for education games</p>
+            <div>
+              <button className="btnCard">View</button>
+              <button className="btnCard marginCard">GitHub</button>
+            </div>
           </div>
-        </div>
-        <div className="cardStyle">
-        <Image 
-        src={Aba}
-        alt="Aba"
-        width={200}
-        height={150}
-        className="imgProjects"
-        />
-          <p>Reformulation of Aba Embalagens instutional site </p>
-          <div>
-            <button className="btnCard">View</button>
-            <button className="btnCard marginCard">GitHub</button>
+          <div className="cardStyle">
+          <Image
+          src={Aba}
+          alt="Aba"
+          width={200}
+          height={150}
+          className="imgProjects"
+          />
+            <p>Reformulation of Aba Embalagens instutional site </p>
+            <div>
+              <button className="btnCard">View</button>
+              <button className="btnCard marginCard">GitHub</button>
+            </div>
           </div>
-        </div>
-        <div className="cardStyle">
-        <Image 
-        src={Simpsons}
-        alt="Aba"
-        width={200}
-        height={150}
-        className="imgProjects"
-        />
-          <p>Education game for the platform ColabEduc, developed with NextJS</p>
-          <div>
-            <button className="btnCard">View</button>
-            <button className="btnCard marginCard">GitHub</button>
+          <div className="cardStyle">
+          <Image
+          src={Simpsons}
+          alt="Aba"
+          width={200}
+          height={150}
+          className="imgProjects"
+          />
+            <p>Education game for the platform ColabEduc, developed with NextJS</p>
+            <div>
+              <button className="btnCard">View</button>
+              <button className="btnCard marginCard">GitHub</button>
+            </div>
           </div>
-        </div>
-        <div className="cardStyle">
-        <Image 
-        src={Aba}
-        alt="Aba"
-        width={200}
-        height={150}
-        className="imgProjects"
-        />
-          <p>Development platform to listen podcasts, very similar to Spotify, made in Next Level Week</p>
-          <div>
-            <button className="btnCard">View</button>
-            <button className="btnCard marginCard">GitHub</button>
+          <div className="cardStyle">
+          <Image
+          src={Aba}
+          alt="Aba"
+          width={200}
+          height={150}
+          className="imgProjects"
+          />
+            <p>Development platform to listen podcasts, very similar to Spotify, made in Next Level Week</p>
+            <div>
+              <button className="btnCard">View</button>
+              <button className="btnCard marginCard">GitHub</button>
+            </div>
           </div>
         </div>
       </section>

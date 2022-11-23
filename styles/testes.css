@@ -1,24 +1,4 @@
 
 
-.containerS{
-    width: 50%;
-    height: 100%;
-    overflow-x: scroll;
-    overflow-y: visible;
-    background-color: #fefaf6;
-    padding: 2%;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 #fefaf6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.imgcontainerS{
-    display: flex;
-    flex-direction: row;
-}
-
-.imgS{
-    width: 200px;
-    height: 200px;
-    margin-right: 50px;
-}
 

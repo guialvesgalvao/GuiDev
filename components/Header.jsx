@@ -29,18 +29,4 @@ export default function Header () {
         
     )
 }
-/*<NavbarToggler onClick={toggle} className="togglerStyle"/>
-<Collapse isOpen={isOpen} navbar >
-<Nav className="me-auto" navbar>
-<NavItem>
-    <NavLink href="/" className="">Ínicio</NavLink>
-  </NavItem>
-  <NavItem>
-    <NavLink href="/about" className="">Sobre Nós</NavLink>
-  </NavItem>
-  <NavItem>
-    <NavLink href="/contato" className="">Contato</NavLink>
-  </NavItem>
-</Nav>
-</Collapse>*/
 
