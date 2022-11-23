@@ -16,6 +16,8 @@ import {faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import Logo from '../public/logo-branco.png';
 import Aba from '../public/aba.png';
 import Simpsons from '../public/simpsons.png';
+import Nlw from '../public/nlw.png';
+import Colab from '../public/colab.jpeg';
 
 
 export default function Home() {
@@ -28,8 +30,13 @@ export default function Home() {
             <span className="textSize2">Im a</span>
            <span className="pText typing-animation"> Front End Developer </span>
            <span className="textSize3">and will show you some of my projects</span>
-           <div>            <FontAwesomeIcon icon={faLinkedinIn} className="iconLinkedin" />
-           <FontAwesomeIcon icon={faGithub} className="iconGithub"/>
+           <div>            
+           <Link href="https://www.linkedin.com/in/guilherme-galv%C3%A3o-b7913620b/">
+             <FontAwesomeIcon icon={faLinkedinIn} className="iconLinkedin" />
+           </Link>
+           <Link href="https://github.com/guialvesgalvao">
+             <FontAwesomeIcon icon={faGithub} className="iconGithub"/>
+           </Link>
            </div>
             
         </div>
@@ -125,16 +132,18 @@ export default function Home() {
         <div className="responsiveProjects">
           <div className="cardStyle">
           <Image
-          src={Aba}
-          alt="Aba"
+          src={Colab}
+          alt="ColabEduc"
           width={200}
           height={150}
           className="imgProjects"
           />
             <p>Development front-end of the platform ColabEduc, that contains authentication and pagination for education games</p>
             <div>
-              <button className="btnCard">View</button>
-              <button className="btnCard marginCard">GitHub</button>
+                <button className="btnCard">View</button>
+              <Link href="https://github.com/guialvesgalvao/ColabEducFrontNextJS">
+                <button className="btnCard marginCard">GitHub</button>
+              </Link>
             </div>
           </div>
           <div className="cardStyle">
@@ -147,8 +156,13 @@ export default function Home() {
           />
             <p>Reformulation of Aba Embalagens instutional site </p>
             <div>
-              <button className="btnCard">View</button>
-              <button className="btnCard marginCard">GitHub</button>
+              <Link href="https://vermillion-syrniki-e747f8.netlify.app/">
+                <button className="btnCard">View</button>
+              </Link>
+              <Link href="https://github.com/guialvesgalvao/MyBusiness
+">
+                <button className="btnCard marginCard">GitHub</button>
+              </Link>
             </div>
           </div>
           <div className="cardStyle">
@@ -161,22 +175,28 @@ export default function Home() {
           />
             <p>Education game for the platform ColabEduc, developed with NextJS</p>
             <div>
-              <button className="btnCard">View</button>
-              <button className="btnCard marginCard">GitHub</button>
+              <Link href="https://cozy-cactus-a4e854.netlify.app/">
+                <button className="btnCard">View</button>
+              </Link>
+              <Link href="https://github.com/guialvesgalvao/quiz-simpsons">
+                <button className="btnCard marginCard">GitHub</button>
+              </Link>
             </div>
           </div>
           <div className="cardStyle">
           <Image
-          src={Aba}
-          alt="Aba"
+          src={Nlw}
+          alt="Next Level Week"
           width={200}
           height={150}
           className="imgProjects"
           />
             <p>Development platform to listen podcasts, very similar to Spotify, made in Next Level Week</p>
             <div>
-              <button className="btnCard">View</button>
-              <button className="btnCard marginCard">GitHub</button>
+                <button className="btnCard">View</button>
+              <Link href="https://github.com/guialvesgalvao/ProjetoNLWRocketSeat">
+                <button className="btnCard marginCard">GitHub</button>
+              </Link>
             </div>
           </div>
         </div>

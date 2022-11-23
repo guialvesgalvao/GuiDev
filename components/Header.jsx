@@ -22,7 +22,10 @@ export default function Header () {
         placeholder="blur"
       />
     </NavbarBrand>
+        <Link href="http://api.whatsapp.com/send?1=pt_BR&phone=5511954035132
+">
         <button className="buttonHeader">Let&apos;s Connect</button>
+        </Link>
       </Navbar>
     </div>
 
