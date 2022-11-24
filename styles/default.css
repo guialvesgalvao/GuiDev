@@ -106,16 +106,22 @@
 .skillText{
     display: flex;
     width: 50%;
-    justify-content: left;
+    align-items: flex-start;
     text-align: left;
     flex-direction: column;
 }
 
 .titleSkill{
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     font-weight: 500;
     color: #fefaf6;
-    text-decoration: underline #222222 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.pSkill{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 .containerS{
@@ -163,11 +169,18 @@
 
 /* --- Projects --- */
 
-
+.titleProjects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fefaf6;
+}
 
 .responsiveProjects {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .cardStyle {
@@ -184,6 +197,8 @@
 .imgProjects {
     width: 300 !important;
     height: 300 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .btnCard{
@@ -203,6 +218,7 @@
 .marginCard{
     margin-left: 0.875rem;
 }
+
 
 
 /* --- Animações --- */

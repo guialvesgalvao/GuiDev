@@ -44,8 +44,8 @@ export default function Home() {
       <section>
         <div className="skillOrg">
           <div className="skillText">
-            <span className="titleSkill">Skill</span>
-            <p>description about me and about the language, maybe about de react and next developer aplication especiality responsive sites</p>
+            <span className="titleSkill">SKILLS</span>
+            <p className="pSkill">description about me and about the language, maybe about de react and next developer aplication especiality responsive sites</p>
           </div>
           <div className="containerS">
                     <div className="imgcontainerS">
@@ -128,16 +128,17 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h3 className="container mt-3">Projects</h3>
+        <h3 className="titleProjects mt-5">PROJECTS</h3>
         <div className="responsiveProjects">
           <div className="cardStyle">
-          <Image
-          src={Colab}
-          alt="ColabEduc"
-          width={200}
-          height={150}
-          className="imgProjects"
-          />
+          <div className="imgProjects mb-2">
+            <Image
+            src={Colab}
+            alt="ColabEduc"
+            width={200}
+            height={150}
+            />
+          </div>
             <p>Development front-end of the platform ColabEduc, that contains authentication and pagination for education games</p>
             <div>
                 <button className="btnCard">View</button>
@@ -147,14 +148,15 @@ export default function Home() {
             </div>
           </div>
           <div className="cardStyle">
-          <Image
-          src={Aba}
-          alt="Aba"
-          width={200}
-          height={150}
-          className="imgProjects"
-          />
-            <p>Reformulation of Aba Embalagens instutional site </p>
+          <div className="imgProjects mb-2">
+            <Image
+            src={Aba}
+            alt="Aba"
+            width={200}
+            height={150}
+            />
+          </div>
+            <p>Reformulation of Aba Embalagens instutional site in NextJS, a simple touch of modernization </p>
             <div>
               <Link href="https://vermillion-syrniki-e747f8.netlify.app/">
                 <button className="btnCard">View</button>
@@ -166,15 +168,16 @@ export default function Home() {
             </div>
           </div>
           <div className="cardStyle">
-          <Image
-          src={Simpsons}
-          alt="Aba"
-          width={200}
-          height={150}
-          className="imgProjects"
-          />
-            <p>Education game for the platform ColabEduc, developed with NextJS</p>
-            <div>
+          <div className="imgProjects mb-2">
+            <Image
+            src={Simpsons}
+            alt="Aba"
+            width={200}
+            height={150}
+            />
+          </div>
+            <p>The Simpson&apos;s Quiz is a education game for the platform ColabEduc, developed with NextJS</p>
+            <div className="positionBtnProjects">
               <Link href="https://cozy-cactus-a4e854.netlify.app/">
                 <button className="btnCard">View</button>
               </Link>
@@ -184,13 +187,14 @@ export default function Home() {
             </div>
           </div>
           <div className="cardStyle">
-          <Image
-          src={Nlw}
-          alt="Next Level Week"
-          width={200}
-          height={150}
-          className="imgProjects"
-          />
+          <div className="imgProjects mb-2">
+            <Image
+            src={Nlw}
+            alt="Next Level Week"
+            width={200}
+            height={150}
+            />
+          </div>
             <p>Development platform to listen podcasts, very similar to Spotify, made in Next Level Week</p>
             <div>
                 <button className="btnCard">View</button>
