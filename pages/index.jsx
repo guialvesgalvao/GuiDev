@@ -95,7 +95,7 @@ export default function Home() {
                         </div>
                         <div className="w100">
                           <span className="titleLang">TypeScript</span>
-                          <Image src={iTs} alt="Bootstrap" className='imgS marginToFix' />
+                          <Image src={iTs} alt="Typescript" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
@@ -105,7 +105,7 @@ export default function Home() {
                         </div>
                         <div className="w100">
                           <span className="titleLang">MySQL</span>
-                          <Image src={iMysql} alt="Bootstrap" className='imgS marginToFix' />
+                          <Image src={iMysql} alt="MySQL" className='imgS marginToFix' />
                           <Progress
                             className="my-2 w80"
                             value={100}
